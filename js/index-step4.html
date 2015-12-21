@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link href="css/reset.css" rel="stylesheet">
+<script src="js/TouchSlide.1.1.js">
+    
+</script>
+<style>
+    html{ font-size: 14px;}
+    body{ font:14px/1.7em 'Microsoft Yahei',arial;  color: #777; padding-bottom: 100px;}
+    a{ color: #848484; text-decoration: none;}
+    a:hover{ color:rgb(77,157,220); }
+    .clearfix:after{ content: ""; display: block; height: 0; width: 100%; clear: both; visibility: hidden;}
+    .l{ float: left;}
+    .r{ float: right;}
+
+    header{ height: 48px; background-color: rgb(77,157,220);}
+    header h1{ text-align: center; height: 48px; line-height: 48px; color: #fff; font-weight:normal; font-size: 1.4rem;}
+    .btn-home{ height: 32px; width: 32px; display: block; position: absolute; right: 16px; top: 8px; background-image: url(images/pngbg14.png); background-size: cover; text-indent: -9999em; }
+    /*安卓48  ios 43*/
+    .hot-nav li{ width:33.3333%; float: left; margin-bottom: 16px;}
+    .hot-nav li a{ display: block; text-align: center;}
+    .hot-nav li a:before{ content:"";display: block; height: 56px; width: 56px; line-height: 48px; margin:0 auto; margin-bottom: 2px; border-radius: 56px; background-color:#0C6514; background-size: 32px auto; background-repeat: no-repeat; background-position: center center; transition:transform 0.5s ease; }
+    .hot-nav li a:hover:before{ transform:scale(1.2,1.2);}
+    .hot-nav li a.item1:before{ background-color:rgb(255,98,1); background-image: url(images/bg-c2/pngbg03.png); }
+    .hot-nav li a.item2:before{ background-color:rgb(65,168,235); background-image: url(images/bg-c2/pngbg04.png); }
+     .hot-nav li a.item3:before{ background-color:rgb(65,168,235); background-image: url(images/bg-c2/pngbg05.png); }
+      .hot-nav li a.item4:before{ background-color:rgb(241,186,8); background-image: url(images/bg-c2/pngbg06.png); }
+     .hot-nav li a.item5:before{ background-color:rgb(228,49,42); background-image: url(images/bg-c2/pngbg07.png); }
+      .hot-nav li a.item6:before{ background-color:rgb(241,186,8); background-image: url(images/bg-c2/pngbg08.png); }
+      footer{ width: 100%; height: 72px; position: fixed; left: 0; bottom: 0;
+            background:#fff; box-shadow: 0px -3px 3px #ccc; }
+      .f-nav li{ width: 20%; text-align: center; float: left;}
+      .f-nav li a:before{ content: ""; width: 48px; height: 48px; display: block; margin:0px auto; background-image: url(images/pngbg09.png); background-size: 36px auto; background-position:  center center; background-repeat: no-repeat;}
+
+      .f-nav li a{ display: block; font-size: 0.7rem; width: 100%;}
+    .f-nav li.item2 a:before{ background-image: url(images/pngbg11.png);
+     background-size: 36px auto;}
+    .f-nav li.item3 a:before{ background-image: url(images/pngbg12.png)}
+    .f-nav li.item4 a:before{ background-image: url(images/pngbg13.png);
+     background-size: auto 40px;}
+    .f-nav li.item5 a:before{ background-image: url(images/lmenu.png);
+        background-size: 32px auto;}
+.produce h3{ height: 2rem; line-height: 2rem; width: 90%; margin: 0 auto; border-left: 3px solid rgb(77,157,220); padding-left: 1rem; padding-right: 1rem; margin-bottom: 1.5rem; margin-top: 4rem; color: #333; }
+.produce h3 a{ float: right;}
+.pro li{ width:45%; float: left; border:1px solid #ddd; margin-left: 3.3%; margin-bottom: 1rem; }
+.pro li a{ display: block; padding:1rem;}
+.pro li a img{ width: 100%; height: auto;}
+.produce .pro li a h5{ font-size: 1rem; color: #484848; width: 90%; overflow: hidden; white-space: nowrap; text-overflow:ellipsis; }
+.produce .pro li a p{ font-size: 0.7rem; color: #848484;}
+/* 本例子css -------------------------------------- */
+    .slideBox{ position:relative; overflow:hidden; margin:0px auto;  max-width:100%;/* 设置焦点图最大宽度 */ }
+    .slideBox .hd{ position:absolute; height:28px; line-height:28px; bottom:1.5rem; right:0; left:0; z-index:1;text-align: center; }
+
+    .slideBox .hd li{ display:inline-block; width:5px; height:5px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background:#333; text-indent:-9999px; overflow:hidden; margin:0 6px;   }
+    .slideBox .hd li.on{ background:#46B3E1;  }
+    .slideBox .bd{ position:relative; z-index:0; }
+    .slideBox .bd li{ position:relative; text-align:center;  }
+    .slideBox .bd li img{ background:url(images/loading.gif) center center no-repeat;  vertical-align:top; width:100%; height: auto;/* 图片宽度100%，达到自适应效果 */}
+    .slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0,0,0,0);  }  /* 去掉链接触摸高亮 */
+    .slideBox .bd li .tit{ display:block; width:100%;  position:absolute; bottom:0; text-indent:10px; height:28px; line-height:28px; background:url(images/focusBg.png) repeat-x; color:#fff;  text-align:left;  }
+
+
+   /*  1 复制html
+   2 复制css
+   3 正确引用js
+   5 修改html、css、js */
+ /*.slideBox{ margin:0px auto;  max-width:100%;
+    .slideBox .bd li img{height: auto;}*/
+   /* slideBox .hd{left:0; right:0; text-align: center;}
+    宽度100%； li居中
+    .slideBox .hd li.on{ background:#46B3E1;  }选中的li 变颜色
+*/
+
+</style>
+</head>
+<body>
+    <main>
+    <header><h1>互诺</h1>
+    <a href="" class="btn-home">首页</a>
+    </header>
+
+    <div class="banner">
+        
+<!-- 本例主要代码 Start ================================ -->
+            <div id="slideBox" class="slideBox">
+
+                <div class="bd">
+                    <ul>
+                            <li>
+                                <a class="pic" href="#"><img src="images/banner01.jpg" /></a>
+                               
+                            </li>
+                            <li>
+                                <a class="pic" href="#"><img src="images/banner02.jpg"/></a>
+                               
+                            </li>
+                            <li>
+                                <a class="pic" href="#"><img src="images/banner03.jpg"/></a>
+                               
+                            </li>
+                           
+                    </ul>
+                </div>
+
+                <div class="hd">
+                    <ul></ul>
+                </div>
+            </div>
+            <script type="text/javascript">
+                TouchSlide({ 
+                    slideCell:"#slideBox",
+                    titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+                    mainCell:".bd ul", 
+                    effect:"leftLoop", 
+                    autoPage:true,//自动分页
+                    autoPlay:true //自动播放
+                });
+            </script>
+            <!-- 本例主要代码 End ================================ -->
+
+    </div>
+    <nav class="hot-nav">
+        <ul class="h-nav clearfix">
+            <li><a href="" class="item1">链接导1</a></li>
+            <li><a href="" class="item2">链接导2</a></li>
+            <li><a href="" class="item3">链接导3</a></li>
+            <li><a href="" class="item4">链接导4</a></li>
+            <li><a href="" class="item5">链接导5</a></li>
+            <li><a href="" class="item6">链接导6</a></li>
+        </ul>
+
+    </nav>
+    <div class="produce">
+        <h3>案例展示<a href="">+更多</a></h3>
+        <ul class="pro clearfix">
+            <li><a href="">
+                    <img src="images/20141117232.jpg" alt="">
+                    <h5>1粤海房地产开发（中国）有限公司网站建设项目</h5>
+                    <p>
+                        <span class="stime l">2015/10/21</span>
+                        <time class="week r">周期：41周</time>
+                    </p>
+                </a></li>
+            <li><a href="">
+                    <img src="images/20141117232.jpg" alt="">
+                    <h5>2粤海房地产开发（中国）有限公司网站建设项目</h5>
+                    <p>
+                        <span class="stime l">2015/10/22</span>
+                        <time class="week r">周期：42周</time>
+                    </p>
+                </a></li>
+            <li><a href="">
+                    <img src="images/20141117232.jpg" alt="">
+                    <h5>3粤海房地产开发（中国）有限公司网站建设项目</h5>
+                    <p>
+                        <span class="stime l">2015/10/23</span>
+                        <time class="week r">周期：43周</time>
+                    </p>
+                </a></li>
+            <li><a href="">
+                    <img src="images/20141117232.jpg" alt="">
+                    <h5>4粤海房地产开发（中国）有限公司网站建设项目</h5>
+                    <p>
+                        <span class="stime l">2015/10/24</span>
+                        <time class="week r">周期：44周</time>
+                    </p>
+                </a></li>
+            <li><a href="">
+                    <img src="images/20141117232.jpg" alt="">
+                    <h5>5粤海房地产开发（中国）有限公司网站建设项目</h5>
+                    <p>
+                        <span class="stime l">2015/10/25</span>
+                        <time class="week r">周期：45周</time>
+                    </p>
+                </a></li>
+            <li><a href="">
+                    <img src="images/20141117232.jpg" alt="">
+                    <h5>6粤海房地产开发（中国）有限公司网站建设项目</h5>
+                    <p>
+                        <span class="stime l">2015/10/26</span>
+                        <time class="week r">周期：46周</time>
+                    </p>
+                </a></li>
+        </ul>
+
+    </div>
+    <!-- 产品展示 -->
+
+
+
+    <div class="news"></div>
+    <footer>
+        <ul class="f-nav">
+              <li class="item1"><a href="tel:13598859747">链接导航1</a></li>
+              <li class="item2"><a href="sms:13598859747">链接导航2</a></li>
+              <li class="item3"><a href="">链接导航3</a></li>
+              <li class="item4"><a href="">链接导航4</a></li>
+              <li class="item5"><a href="">链接导航5</a></li>
+          </ul>  
+    </footer>
+        
+    </main>
+    <nav class="main-nav"></nav>
+</body>
+</html>

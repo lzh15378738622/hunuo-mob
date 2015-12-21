@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/reset.css" rel="stylesheet">
+<script src="js/TouchSlide.1.1.js"></script>
+
+    
+
+
+
+<style>
+.clearfix:after{content:"";display: block;height: 0;width: 100%;clear:both;visibility: hidden;}
+a{color:#848484;text-decoration: none;}
+a:hover{color:rgb(77,157,220); }
+body{font:14px/1.2em 'Microsoft Yahei',arial;color: #777;padding-bottom:100px;}
+
+header{height: 48px;background-color: rgb(77,157,220);}
+header h1{height: 48px;line-height: 48px;text-align: center;color: #fff;font-weight: normal;font-size: 1.4rem;}
+header .hot-btn{ background-image: url(images/pngbg14.png); height: 32px; width: 32px; display: block; position: absolute; right: 16px; top: 8px; background-size: cover; text-indent: -9999em; }
+
+.hot-nav{margin-top: 20px;}
+.hot-nav li{width: 33.333%;float: left;margin-bottom: 15px;}
+.hot-nav li a{display: block;text-align: center;}
+.hot-nav li a:before{content:"";display: block; height: 56px; width: 56px; /*line-height: 48px;*/ margin:0 auto; /*文字居中 */margin-bottom: 12px;/*图像和下面文字之间的距离*/ border-radius: 56px;background-color: #FFD0D0;/*-webkit-background-size: 36px auto;*/background-repeat: no-repeat;transition: all 1s ease;-webkit-transition: all 1s ease;
+background-size: 36px auto;background-repeat: no-repeat;background-position: center center;}
+.hot-nav li a{text-decoration: none;color:#999;font-size: 12px;}
+.hot-nav li a:hover:before{transform:scale(1.2,1.2);-webkit-transform:scale(1.2,1.2);}
+.hot-nav li.item1 a:before {background-color: rgb(255,98,1);background-image: url(images/bg-c2/pngbg03.png);}
+.hot-nav li.item2 a:before{background-color: rgb(65,168,235);background-image: url(images/bg-c2/pngbg04.png);}
+.hot-nav li.item3 a:before{background-color: rgb(65,168,235);background-image: url(images/bg-c2/pngbg05.png);}
+.hot-nav li.item4 a:before{background-color: rgb(241,186,8);background-image: url(images/bg-c2/pngbg06.png);}
+.hot-nav li.item5 a:before{background-color: rgb(228,49,42);background-image: url(images/bg-c2/pngbg07.png);}
+.hot-nav li.item6 a:before{background-color: rgb(241,186,8);background-image: url(images/bg-c2/pngbg08.png);}
+/*banner ed*/
+/*produce start*/
+.container{width:100%;margin:0 auto;}
+.produce h3{height:1em;line-height:1em;width: 90%; margin:0 auto;font-weight: normal; color: rgb(77,157,220);font-size: 1.3em;
+border-left: 3px solid rgb(77,157,220);padding-left: 1em;padding-right: 1em;margin-top: 1.5em;margin-bottom: 2em;}
+
+.produce h3 a{float: right; font-weight: normal;font-size: 15px;} 
+
+.image li{width:48%;float: left;border: 1px solid #e0e0e0;margin-left: 1%;margin-right:1%;margin-bottom: 2em;box-sizing=border-box; }
+.image li img{width:100%; height: auto;}
+.image .title{width:90%;font-size: 16px;color: #222;overflow: hidden;white-space: nowrap;text-overflow:ellipsis;padding:5px;}
+.image  .date{font-size: 12px;float: right;}
+/*produce ed*/
+/*news start*/
+
+.news-title{height: 4em;line-height: 4em;background-color: url(230,230,230);padding-left: 1em;box-shadow:0 3px 3px #ddd;border: 1px solid #e0e0e0;}
+.news-title li{float: left;padding-left: 4px;padding-right:8px;position: relative;}
+.news-title .active:after,.news-title li:hover:after{content: "";height: 0;width: 0;display: block;border: 6px solid transparent;border-top-color: #fff;position: absolute;left: 50%;bottom: 0;transform:translate(-3px,10px);-webkit-transform:translate(-3px,10px);}
+.news-con{width: 95%;margin: 0 auto;}
+.news-con li {height: 56px;border-bottom: 1px solid #eaeaea; clear: both;}
+.news-con li a{display: block;}
+.news-con li a .num{font:normal bold  3em 'Microsoft Yahei';display: block;float: left;width: 15%;height: 36px;line-height: 36px;text-shadow:0 -1px 1px #999;border-right: 1px solid #aaa; margin-top: 8px; text-align: center;color:#ddd;} 
+.news-con li a h6{width:85%; padding-top:8px;line-height: 20px; font-size: 1.1rem; color: #777; font-weight: normal; padding-left: 1rem;  overflow: hidden;white-space: nowrap;text-overflow:ellipsis;}
+.news-con li a h6:hover{color:rgb(77,157,220);  }
+.news-con li a time{ font-size: 0.7rem; color: #84848;padding-left: 1em;  }
+/*footer start*/
+.foot-link {padding-left: 6px;}
+.foot-link li{float: left;padding-left:6px;;height:2em;line-height: 2em;margin-top: 1em; }
+.foot-link li a{color:rgb(77,157,220);}
+.f-link p{padding-left: 1em;font-size: 0.8em;}
+.f-link em{display: inline-block;height:16px;width:16px;background-image: url(images/diannao.png);background-size: cover;position: relative;left:-2px;top:4px;}
+/*news ed*/
+    /*footer star*/
+    footer{height: 72px;width:100%;background-color:#FFf; box-shadow: 0 -3px 3px #ccc;position: fixed; left: 0; bottom: 0;}
+    footer li{width: 20%;float: left;text-align: center;}
+    footer li a:before{content: "";display: block;width: 48px;height: 48px;margin:3px auto;background-image: url(images/pngbg09.png);background-size:38px auto;background-position: center center;background-repeat: no-repeat;}
+     footer li a{display: block;}
+     
+    footer .item2 a:before{background-image: url(images/pngbg11.png);background-size: 36px auto;}
+    footer .item3 a:before{background-image: url(images/pngbg12.png);}
+    footer .item4 a:before{background-image: url(images/pngbg13.png);background-size: 34px 35px;}
+    footer .item5 a:before{background-image: url(images/lmenu.png);}
+    /*footer ed*/
+
+
+/* 本例子css -------------------------------------- */
+    .slideBox{ position:relative; overflow:hidden; margin:0 auto;  max-width:100%;/* 设置焦点图最大宽度 */ }
+    .slideBox .hd{ position:absolute; height:28px; line-height:28px; bottom:0rem; right:0; left: 0;z-index:1;text-align: center; }
+    .slideBox .hd li{ display:inline-block; width:5px; height:5px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background:#333; text-indent:-9999px; overflow:hidden; margin:0 6px;   }
+    .slideBox .hd li.on{ background:rgb(77,157,220);  }
+    .slideBox .bd{ position:relative; z-index:0; }
+    .slideBox .bd li{ position:relative; text-align:center;  }
+    .slideBox .bd li img{ height: auto;background:url(images/loading.gif) center center no-repeat;  vertical-align:top; width:100%;/* 图片宽度100%，达到自适应效果 */}
+    .slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0,0,0,0);  }  /* 去掉链接触摸高亮 */
+    .slideBox .bd li .tit{ display:block; width:100%;  position:absolute; bottom:0; text-indent:10px; height:28px; line-height:28px; background:url(images/focusBg.png) repeat-x; color:#fff;  text-align:left;  }
+    /*  1 复制html
+   2 复制css
+   3 正确引用js
+   5 修改html、css、js */
+ /*.slideBox{ margin:0px auto;  max-width:100%;
+    .slideBox .bd li img{height: auto;}*/
+   /* slideBox .hd{left:0; right:0; text-align: center;}
+    宽度100%； li居中
+    .slideBox .hd li.on{ background:#46B3E1;  }选中的li 变颜色
+*/
+</style>
+</head>
+<body>
+ <nav class="main-nav"></nav>
+ <main>
+     <header><h1>互诺</h1>
+     <a href="my-indexdag.html" class="hot-btn">首页</a>
+     </header>
+     <div class="banner">
+       <!-- 本例主要代码 Start ================================ -->
+            <div id="slideBox" class="slideBox">
+
+                <div class="bd">
+                    <ul>
+                            <li>
+                                <a class="pic" href="my-about2.html"><img src="images/banner01.jpg" /></a>
+                            </li>
+                            <li>
+                                <a class="pic" href="my-about2.html"><img src="images/banner02.jpg"/></a>
+                            </li>
+                            <li>
+                                <a class="pic" href="my-about2.html"><img src="images/banner03.jpg"/></a>
+                            </li> 
+                    </ul>
+                </div>
+
+                <div class="hd">
+                    <ul></ul>
+                </div>
+            </div>
+            <script type="text/javascript">
+                TouchSlide({ 
+                    slideCell:"#slideBox",
+                    titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+                    mainCell:".bd ul", 
+                    effect:"leftLoop", 
+                    autoPage:true,//自动分页
+                    autoPlay:true //自动播放
+                });
+            </script>
+            <!-- 本例主要代码 End ================================ -->  
+
+     </div>
+      <div class="hot-nav">
+                  <ul class="clearfix">
+                         <li class="item1"><a href="">网站建设</a></li>
+                         <li class="item2"><a href="my-anli.html">手机开发</a></li>
+                         <li class="item3"><a href="my-anli.html">微信营销</a></li>
+                         <li class="item4"><a href="my-anli.html">成功案例</a></li>
+                         <li class="item5"><a href="my-server.html">产品服务</a></li>
+                         <li class="item6"><a href="my-news.html">新闻中心</a></li>
+                  </ul>                
+    </div>
+     <div class="produce clearfix">
+        <div class="container clearfix">
+        <h3>我们的案例<a href="">更多 >></a></h3>
+        <ul class="image clearfix">
+            <li><a href="my-about2.html"><img src="images/20153312921.jpg" alt=""></a>
+                <p class="title">粤海房地产开发（中国）有限公司网站建设项目</p>
+                   <p class="date"> <date>2014-01-11</date>周期：40 工作日</p>
+            </li>
+            <li><a href=""><img src="images/20153312921.jpg" alt=""></a>
+                <p class="title">粤海房地产开发（中国）有限公司网站建设项目</p>
+                   <p class="date"> <date>2014-01-11</date>周期：40 工作日</p>
+            </li>
+            <li><a href=""><img src="images/20153313137.jpg" alt=""></a>
+            <p class="title">粤海房地产开发（中国）有限公司网站建设项目</p>
+                   <p class="date"> <date>2014-01-11</date>周期：40 工作日</p>
+            </li>
+            <li><a href=""><img src="images/20153315283.jpg" alt=""></a>
+            <p class="title">粤海房地产开发（中国）有限公司网站建设项目</p>
+                   <p class="date"> <date>2014-01-11</date>周期：40 工作日</p>
+            </li>
+            <li><a href=""><img src="images/20153317190.jpg" alt=""></a>
+            <p class="title">粤海房地产开发（中国）有限公司网站建设项目</p>
+                   <p class="date"> <date>2014-01-11</date>周期：40 工作日</p>
+            </li>
+            <li><a href=""><img src="images/20156249291.jpg" alt=""></a>
+            <p class="title">粤海房地产开发（中国）有限公司网站建设项目</p>
+                   <p class="date"> <date>2014-01-11</date>周期：40 工作日</p>
+            </li>
+        </ul>
+        </div>
+     </div>
+     <div class="news">
+       
+            <ul class="news-title clearfix">
+                <li class="active"><a href="">最新签约</a></li>
+                <li><a href="">最新案例</a></li>
+                <li> <a href="">行业新闻</a></li>
+                <li><a href="">新闻中心</a></li>
+            </ul>
+            <ul class="news-con clearfix">
+                <li>
+                    <a href="">
+                    <span class="num">25</span>
+                    <h6>[广州] 成功签约TCL集团股份有限公司网站建设协议</h6>
+                    <time>2015/10/20</time>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    <span class="num">25</span>
+                    <h6>[广州] 成功签约TCL集团股份有限公司网站建设协议</h6>
+                    <time>2015/10/20</time>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    <span class="num">25</span>
+                    <h6>[广州] 成功签约TCL集团股份有限公司网站建设协议</h6>
+                    <time>2015/10/20</time>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    <span class="num">25</span>
+                    <h6>[广州] 成功签约TCL集团股份有限公司网站建设协议</h6>
+                    <time>2015/10/20</time>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    <span class="num">25</span>
+                    <h6>[广州] 成功签约TCL集团股份有限公司网站建设协议</h6>
+                    <time>2015/10/20</time>
+                    </a>
+                </li>
+                
+
+             
+            </ul>
+        </div> 
+  <div class="f-link">
+      <ul class="foot-link clearfix">
+          <li><a href="my-about2.html">关于互诺</a></li>
+          <li><a href="my-about2.html">网站建设</a></li>
+          <li><a href="my-anli.html">成功案例</a></li>
+          <li><a href="my-anli.html">手机开发</a></li>
+          <li><a href="my-anli.html">微信营销</a></li>
+      </ul>
+      <p> Copyright © 2003-2015 互诺科技, All Rights Reserved</p>
+      <p><em></em>电脑版</p>
+  </div>
+     <footer>
+          <ul>
+            <li class="item1"><a href="tel:18135634271">拨打电话</a></li>
+            <li class="item2"><a href="sms:18135634271">发送短信</a></li>
+            <li class="item3"><a href="my-server.html">产品服务</a></li>
+            <li class="item4"><a href="my-server.html">联系我们</a></li>
+            <li class="item5"><a href="javascript:void(0)">网站导航</a></li>
+        </ul>
+     </footer>
+<div class="sidebox">
+    <span class="closeSide">×</span>
+    <div class="sidenav">
+            <ul>
+                <li><a class="bg1" href="index.htm" tppabs="http://m.hunuo.com/">首页</a></li>
+                <li><a class="bg2" href="">网站建设</a></li>
+                <li><a class="bg3" href="">手机开发</a></li>
+                <li><a class="bg4" href="">微信营销</a></li>
+                <li><a class="bg5" href="">成功案例</a></li>
+                <li><a class="bg6" href="">产品服务</a></li>
+                <li><a class="bg7" href="">新闻中心</a></li>
+                <li><a class="bg8" href="">关于我们</a></li>
+                <li><a class="bg9" href="#">用户登录</a></li>
+                <li><a class="bg10" href="">联系我们</a></li>
+            </ul>
+        </div>
+</div><!---侧边栏目-->
+<div class="lay"></div>
+
+ </main> 
+ <style>
+.sidebox{z-index:20;position:fixed;height:120%;top:0;left:-235px;width:235px;background:url(images/jpgbg1.jpg);background-size:100% 100%; transition:all 1s;}
+.sidenav{padding-top:30px}
+.sidenav li{height:49px;line-height:49px}
+.sidenav li a{display:inline-block;margin-left:33px;padding-left:43px;font-size:15px;color:#fff;background-repeat:no-repeat;background-position:left center}
+.sidenav li .bg1{background-image:url(images/pngbg14.png);background-size:21px auto}
+.sidenav li .bg2{background-image:url(images/pngbg15.png);background-size:25px auto}
+.sidenav li .bg3{background-image:url(images/pngbg16.png);background-size:20px auto}
+.sidenav li .bg4{background-image:url(images/pngbg17.png);background-size:23px auto}
+.sidenav li .bg5{background-image:url(images/pngbg18.png);background-size:24px auto}
+.sidenav li .bg6{background-image:url(images/pngbg19.png);background-size:25px auto}
+.sidenav li .bg7{background-image:url(images/pngbg20.png);background-size:25px auto}
+.sidenav li .bg8{background-image:url(images/pngbg21.png);background-size:18px auto}
+.sidenav li .bg9{background-image:url(images/pngbg22.png);background-size:21px auto}
+.sidenav li .bg10{background-image:url(images/pngbg23.png);background-size:16px auto}
+  .closeSide{ width: 50px; height: 50px; display: block; position: absolute; right: 0; top:0; color: #fff; text-align: center; line-height: 50px;cursor: pointer;}
+  .lay{ position: fixed; width: 100%; height: 100%; left: 0; top:0;background-color: #000;  opacity: 0;  transition:all 1s;z-index:-1; }
+  .mask{ opacity: .7; ;z-index:11;}
+  .sideT{left:0;} 
+ </style> 
+ <script src="js/jquery1.42.min.js"></script>
+ <script>
+$(function(){
+    $(".item5").click(function(){
+$(".sidebox").addClass("sideT");
+$(".lay").addClass("mask"); 
+
+    })
+     $(".closeSide").click(function(){
+ $(".lay").removeClass("mask");
+    $(".sidebox").removeClass("sideT")
+
+    })  
+})
+ </script>     
+</body>
+</html>
